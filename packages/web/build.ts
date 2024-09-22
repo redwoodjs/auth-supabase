@@ -1,9 +1,9 @@
-import { buildCjs, buildEsm } from '@redwoodjs/framework-tools'
+import { buildCjs, buildEsm } from '@redwoodjs/auth-supabase-framework-tools'
 import {
   generateTypesCjs,
   generateTypesEsm,
   insertCommonJsPackageJson,
-} from '@redwoodjs/framework-tools/generateTypes'
+} from '@redwoodjs/auth-supabase-framework-tools/generateTypes'
 
 // ESM build and type generation
 await buildEsm()

@@ -1,9 +1,20 @@
+/* eslint-env node */
+// @ts-check
+
 /**
- * See https://prettier.io/docs/en/options.html.
- * @type {import('prettier').RequiredOptions}
+ * @see https://prettier.io/docs/en/configuration.html
+ * @type {import("prettier").Config}
  */
-module.exports = {
+const config = {
   bracketSpacing: true,
+  tabWidth: 2,
   semi: false,
   singleQuote: true,
+  plugins: [
+    'prettier-plugin-curly',
+    'prettier-plugin-sh',
+    'prettier-plugin-packagejson',
+  ],
 }
+
+module.exports = config

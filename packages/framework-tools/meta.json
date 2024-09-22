@@ -1,0 +1,165 @@
+{
+  "inputs": {
+    "src/attw.ts": {
+      "bytes": 1723,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/buildDefaults.ts": {
+      "bytes": 3902,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/generateTypes.ts": {
+      "bytes": 2132,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/bins/rw-fwtools-attw.ts": {
+      "bytes": 411,
+      "imports": [],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/attw.js": {
+      "imports": [
+        {
+          "path": "node:child_process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:fs",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:module",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "exports": [
+        "attw"
+      ],
+      "entryPoint": "src/attw.ts",
+      "inputs": {
+        "src/attw.ts": {
+          "bytesInOutput": 1157
+        }
+      },
+      "bytes": 1176
+    },
+    "dist/buildDefaults.js": {
+      "imports": [
+        {
+          "path": "node:fs",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:url",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "esbuild",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "fast-glob",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "exports": [
+        "build",
+        "buildCjs",
+        "buildEsm",
+        "buildExternalCjs",
+        "buildExternalEsm",
+        "copyAssets",
+        "defaultBuildOptions",
+        "defaultIgnorePatterns",
+        "defaultPatterns"
+      ],
+      "entryPoint": "src/buildDefaults.ts",
+      "inputs": {
+        "src/buildDefaults.ts": {
+          "bytesInOutput": 3225
+        }
+      },
+      "bytes": 3390
+    },
+    "dist/generateTypes.js": {
+      "imports": [
+        {
+          "path": "node:fs",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:url",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "zx",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "exports": [
+        "generateTypesCjs",
+        "generateTypesEsm",
+        "insertCommonJsPackageJson"
+      ],
+      "entryPoint": "src/generateTypes.ts",
+      "inputs": {
+        "src/generateTypes.ts": {
+          "bytesInOutput": 1173
+        }
+      },
+      "bytes": 1253
+    },
+    "dist/bins/rw-fwtools-attw.js": {
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "../attw.js",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/bins/rw-fwtools-attw.ts",
+      "inputs": {
+        "src/bins/rw-fwtools-attw.ts": {
+          "bytesInOutput": 416
+        }
+      },
+      "bytes": 416
+    }
+  }
+}

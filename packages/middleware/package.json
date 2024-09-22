@@ -1,10 +1,10 @@
 {
   "name": "@redwoodjs/auth-supabase-middleware",
-  "version": "8.0.0",
+  "version": "10.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redwoodjs/redwood.git",
-    "directory": "packages/auth-providers/supabase/middleware"
+    "url": "git+https://github.com/redwoodjs/auth-supabase.git",
+    "directory": "packages/middleware"
   },
   "license": "MIT",
   "type": "module",
@@ -39,15 +39,15 @@
   },
   "dependencies": {
     "@redwoodjs/auth-supabase-api": "workspace:*",
-    "@redwoodjs/web": "workspace:*",
+    "@redwoodjs/web": "8.2.0",
     "@supabase/ssr": "0.5.1"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.16.4",
-    "@redwoodjs/api": "workspace:*",
-    "@redwoodjs/auth": "workspace:*",
-    "@redwoodjs/framework-tools": "workspace:*",
-    "@redwoodjs/graphql-server": "workspace:*",
+    "@redwoodjs/api": "8.2.0",
+    "@redwoodjs/auth": "8.2.0",
+    "@redwoodjs/auth-supabase-framework-tools": "workspace:*",
+    "@redwoodjs/graphql-server": "8.2.0",
     "@types/aws-lambda": "8.10.145",
     "concurrently": "8.2.2",
     "publint": "0.2.10",

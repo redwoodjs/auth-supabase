@@ -1,10 +1,10 @@
 {
   "name": "@redwoodjs/auth-supabase-setup",
-  "version": "8.0.0",
+  "version": "10.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redwoodjs/redwood.git",
-    "directory": "packages/auth-providers/supabase/setup"
+    "url": "git+https://github.com/redwoodjs/auth-supabase.git",
+    "directory": "packages/setup"
   },
   "license": "MIT",
   "type": "commonjs",
@@ -37,11 +37,11 @@
     "prepublishOnly": "NODE_ENV=production yarn build"
   },
   "dependencies": {
-    "@redwoodjs/cli-helpers": "workspace:*"
+    "@redwoodjs/cli-helpers": "8.2.0"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.16.4",
-    "@redwoodjs/framework-tools": "workspace:*",
+    "@redwoodjs/auth-supabase-framework-tools": "workspace:*",
     "@types/yargs": "17.0.33",
     "concurrently": "8.2.2",
     "publint": "0.2.10",

@@ -1,4 +1,4 @@
-import { build, copyAssets } from '@redwoodjs/framework-tools'
+import { build, copyAssets } from '@redwoodjs/auth-supabase-framework-tools'
 
 await build()
 

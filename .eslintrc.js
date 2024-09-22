@@ -4,10 +4,8 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-
-    // This one has to come last.
-    // See https://github.com/prettier/eslint-plugin-prettier#recommended-configuration.
-    'plugin:prettier/recommended',
+    'plugin:@typescript-eslint/recommended-type-checked',
+    'plugin:@typescript-eslint/stylistic-type-checked',
   ],
 
   parser: '@typescript-eslint/parser',
@@ -21,8 +19,6 @@ module.exports = {
   ignorePatterns: ['dist'],
 
   rules: {
-    'prettier/prettier': 'warn',
-
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
   },

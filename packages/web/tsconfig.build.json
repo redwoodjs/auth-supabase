@@ -1,15 +1,10 @@
 {
-  "extends": "../../../../tsconfig.compilerOption.json",
+  "extends": "../../tsconfig.compilerOptions.json",
   "compilerOptions": {
     "strict": true,
     "rootDir": "src",
     "outDir": "dist",
     "tsBuildInfoFile": "./tsconfig.build.tsbuildinfo"
   },
-  "include": ["src", "./ambient.d.ts"],
-  "references": [
-    {
-      "path": "./../../../auth/tsconfig.build.json"
-    }
-  ]
+  "include": ["src", "./ambient.d.ts"]
 }
