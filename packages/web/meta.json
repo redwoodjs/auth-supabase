@@ -1,0 +1,65 @@
+{
+  "inputs": {
+    "src/index.ts": {
+      "bytes": 43,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/supabase.ts": {
+      "bytes": 9667,
+      "imports": [],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/cjs/index.js": {
+      "imports": [
+        {
+          "path": "./supabase.js",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/index.ts",
+      "inputs": {
+        "src/index.ts": {
+          "bytesInOutput": 189
+        }
+      },
+      "bytes": 1092
+    },
+    "dist/cjs/supabase.js": {
+      "imports": [
+        {
+          "path": "@supabase/ssr",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@supabase/ssr",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@supabase/supabase-js",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@redwoodjs/auth",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/supabase.ts",
+      "inputs": {
+        "src/supabase.ts": {
+          "bytesInOutput": 8036
+        }
+      },
+      "bytes": 8939
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "inputs": {
+    "src/defaultGetRoles.ts": {
+      "bytes": 1160,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/index.ts": {
+      "bytes": 2648,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/util.ts": {
+      "bytes": 2173,
+      "imports": [],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/cjs/defaultGetRoles.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/defaultGetRoles.ts",
+      "inputs": {
+        "src/defaultGetRoles.ts": {
+          "bytesInOutput": 406
+        }
+      },
+      "bytes": 1314
+    },
+    "dist/cjs/index.js": {
+      "imports": [
+        {
+          "path": "@redwoodjs/api",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@redwoodjs/auth-supabase-api",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "./util.js",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/index.ts",
+      "inputs": {
+        "src/index.ts": {
+          "bytesInOutput": 1876
+        }
+      },
+      "bytes": 2675
+    },
+    "dist/cjs/util.js": {
+      "imports": [
+        {
+          "path": "@supabase/ssr",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@redwoodjs/api",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@redwoodjs/auth-supabase-api",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/util.ts",
+      "inputs": {
+        "src/util.ts": {
+          "bytesInOutput": 1573
+        }
+      },
+      "bytes": 2510
+    }
+  }
+}

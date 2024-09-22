@@ -1,0 +1,60 @@
+{
+  "inputs": {
+    "src/decoder.ts": {
+      "bytes": 2759,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/index.ts": {
+      "bytes": 68,
+      "imports": [],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/decoder.js": {
+      "imports": [
+        {
+          "path": "@supabase/ssr",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "jsonwebtoken",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@redwoodjs/api",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/decoder.ts",
+      "inputs": {
+        "src/decoder.ts": {
+          "bytesInOutput": 2357
+        }
+      },
+      "bytes": 3923
+    },
+    "dist/index.js": {
+      "imports": [
+        {
+          "path": "./decoder",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/index.ts",
+      "inputs": {
+        "src/index.ts": {
+          "bytesInOutput": 264
+        }
+      },
+      "bytes": 1198
+    }
+  }
+}

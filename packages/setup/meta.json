@@ -1,0 +1,87 @@
+{
+  "inputs": {
+    "src/index.ts": {
+      "bytes": 24,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/setup.ts": {
+      "bytes": 446,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/setupHandler.ts": {
+      "bytes": 1320,
+      "imports": [],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/index.js": {
+      "imports": [
+        {
+          "path": "./setup",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/index.ts",
+      "inputs": {
+        "src/index.ts": {
+          "bytesInOutput": 127
+        }
+      },
+      "bytes": 1059
+    },
+    "dist/setup.js": {
+      "imports": [
+        {
+          "path": "@redwoodjs/cli-helpers",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "./setupHandler.js",
+          "kind": "dynamic-import",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/setup.ts",
+      "inputs": {
+        "src/setup.ts": {
+          "bytesInOutput": 571
+        }
+      },
+      "bytes": 2105
+    },
+    "dist/setupHandler.js": {
+      "imports": [
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@redwoodjs/cli-helpers",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/setupHandler.ts",
+      "inputs": {
+        "src/setupHandler.ts": {
+          "bytesInOutput": 1505
+        }
+      },
+      "bytes": 3002
+    }
+  }
+}
